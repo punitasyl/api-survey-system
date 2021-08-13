@@ -6,8 +6,6 @@ public class AnswerResponseDTO {
 
     private String text;
 
-    private long voteCount;
-
     public AnswerResponseDTO() {
         super();
     }

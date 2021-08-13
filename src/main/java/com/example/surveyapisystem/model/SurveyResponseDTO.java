@@ -12,12 +12,7 @@ public class SurveyResponseDTO {
 
     private Long id;
 
-    private Question question;
-
-    private List<AnswerResponseDTO> answers;
-
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Long selectedChoice;
+    private List<QuestionResponseDTO> question;
 
     public SurveyResponseDTO() {
         super();

@@ -1,6 +1,7 @@
 package com.example.surveyapisystem.repository;
 
 import com.example.surveyapisystem.entity.Survey;
+import com.example.surveyapisystem.model.SurveyResponseDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -13,10 +14,6 @@ import java.util.Optional;
 @Repository
 public interface SurveyRepository extends JpaRepository<Survey, Long> {
     Optional<Survey> findById(Long surveyId);
-
-    Page<Survey> findByCreatedBy(Long userId, Pageable pageable);
-
-    long countByCreatedBy(Long userId);
 
     List<Survey> findByIdIn(List<Long> surveyIds);
 

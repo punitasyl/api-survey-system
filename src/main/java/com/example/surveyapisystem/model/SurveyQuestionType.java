@@ -1,12 +1,9 @@
 package com.example.surveyapisystem.model;
 
 public enum SurveyQuestionType {
-
-	MULTIPLE_SELECTION,
-
+	TEXT_RESPONSE,
 	SINGLE_CHOICE,
-
-	TEXT_RESPONSE;
+	MULTIPLE_SELECTION;
 
 	public static SurveyQuestionType convert(String sqt) {
 		switch (sqt) {

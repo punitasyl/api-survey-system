@@ -10,15 +10,18 @@ import javax.validation.constraints.Size;
 
 @NoArgsConstructor
 @Data
-public class QuestionDTO {
-
-    private Long id;
+public class QuestionRequestDTO {
 
     @NotBlank
     @Size(max = 40)
     @Setter
     @Getter
     private String text;
+
+    @NotBlank
+    @Getter
+    @Setter
+    private SurveyQuestionType questionType;
 
 
 }
